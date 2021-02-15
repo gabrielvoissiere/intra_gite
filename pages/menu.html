@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="https://kit.fontawesome.com/d55e797bfb.js" crossorigin="anonymous"></script>
+    <title>Intra-Gîte</title>
+</head>
+
+<body>
+    <div id="dialog" class="fond">
+    </div>
+
+    <div id="dialogboite" class="fond">
+        <p>
+            Etes vous sur de vouloir <br>
+            vous déconnecter ?
+        </p>
+        <div>
+            <button id="yes">Oui</button>
+            <button id="no">Non</button>
+        </div>
+    </div>
+
+    <header>
+        <h2>INTRA - GÎTE</h2>
+        <button id="retour">Se déconnecter</button>
+    </header>
+
+
+
+    <div class="boite">
+        <div class="reservation" id="reservation">
+            <h1>Réservation</h1>
+            <i class="far fa-file-alt"></i>
+        </div>
+
+        <div class="reservation" id="calendrier">
+            <h1>Calendrier</h1>
+            <i class="far fa-calendar-alt"></i>
+        </div>
+
+        <div class="reservation" onclick="alert('Non disponible pour le moment')">
+            <h1>Documents</h1>
+            <i class="far fa-folder"></i>
+        </div>
+    </div>
+
+    <footer>
+        <h2>© Copyright - 2021</h2>
+    </footer>
+
+    <script src="../javascript/menu.js"></script>
+</body>
+
+</html>

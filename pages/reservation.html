@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Intra-Gîte</title>
+</head>
+
+<body>
+    <header>
+        <h2>Feuille de réservation</h2>
+        <button id="apercu">Aperçu</button>
+        <button id="download">Telecharger</button>
+        <button id="retour">Retour</button>
+    </header>
+
+    <main>
+    <div class="boite">
+        <div id="boite2">
+        <label for="nom" class="flabel">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Duchamps">
+        <br>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Michel">
+        <br>
+        <label for="adresse">Adresse</label>
+        <input type="text" name="adresse" id="adresse" placeholder="325 impasse Pasteur">
+        <br>
+        <label for="codepostal">Code postal</label>
+        <input type="text" name="codepostal" id="codepostal" placeholder="13000">
+        <br>
+        <label for="commune">Ville/commune</label>
+        <input type="text" name="commune" id="commune" placeholder="Marseille">
+        <br>
+        <label for="tel">Téléphone</label>
+        <input type="tel" name="tel" id="tel" placeholder="0650843275">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="mail" id="mail" placeholder="duchampsmichel@yahoo.com">
+        <br>
+        <label for="nbpersonnes">Nombre de personnes</label>
+        <select name="nbpersonne" id="nbpersonne">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+        </select>
+        <br>
+        <label for="animaux">Nombre d'animaux</label>
+        <select name="animaux" id="animaux">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+        </select>
+        <br>
+        <label for="datereservation">Date réservation</label>
+        <input type="date" name="datereservation" id="dateresa" required>
+        <br>
+        <label for="datedebut">Date d'arriver</label>
+        <input type="date" name="datedebut" id="datedebut" required>
+        <br>
+        <label for="datefin">Date de départ</label>
+        <input type="date" name="datefin" id="datefin" required>
+        <br>
+        <label for="commentaire" id="lbscom">Commentaire</label>
+        <textarea name="commentaire" id="commentaire" cols="30" rows="5" maxlength="57"></textarea>
+
+        <div class="button">
+            
+        </div>
+
+
+
+</div>
+    </div>
+    <div id="content">
+
+        <p id="titre">Feuille de reservation</p>
+        <br>
+        <p><span id="p1">Nom : </span><span id="nomresult"></span></p>
+        <br>
+        <p><span id="p2">Prenom : </span><span id="prenomresult"></span></p>
+        <br>
+        <p><span id="p3">Adresse : </span><span id="adresseresult"></span></p>
+        <br>
+        <p><span id="p4">Code postal : </span><span id="codepostalresult"></span></p>
+        <br>
+        <p><span id="p5">Commune : </span><span id="communeresult"></span></p>
+        <br>
+        <p><span id="p6">Telephone : </span><span id="telresult"></span></p>
+        <br>
+        <p><span id="p7">Email : </span><span id="mailresult"></span></p>
+        <br>
+        <p><span id="p8">Nombre de personnes : </span><span id="nbpersonneresult"></span></p>
+        <br>
+        <p><span id="p9">Animaux : </span><span id="animauxresult"></span></p>
+        <br>
+        <p><span id="p10">Date de la reservation : </span><span id="dateresaresult"></span></p>
+        <br>
+        <p id="paragraphe">
+            date d'arriver : <span id="datedebutresult"></span>
+            <br>
+            <br>
+            date de départ : <span id="datefinresult"></span>
+            <br> <br>
+            <p>Commentaire :</p> <br>
+            <p id="comresult"></p>
+    </div>
+    </main>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.2.0/jspdf.umd.min.js"></script>
+    <script defer src="../javascript/reservation.js"></script>
+</body>

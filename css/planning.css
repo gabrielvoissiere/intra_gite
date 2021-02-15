@@ -1,0 +1,181 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/fond.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+header
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header h2
+{
+    position: absolute;
+    left: 80px;
+    font-size: 2em;
+}
+
+.bouton
+{
+    width: 10%;
+    height: 35px;
+    outline: none;
+    border-radius: 100px;
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: black;
+}
+
+.bouton2
+{
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border-radius: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: 10px 10px;
+    padding: 0px 25px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    color: black;
+}
+
+.bouton2 a
+{
+    color: black;
+}
+
+.bouton2 .modifier
+{
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(54, 54, 160);
+}
+
+.bouton:hover, .bouton2:hover
+{
+    cursor: pointer;
+}
+
+table 
+{
+    border-collapse: collapse;
+    margin: 0px 10px;
+}
+
+caption
+{
+    color: white;
+    font-size: 3em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+td /* Toutes les cellules des tableaux... */
+{
+    border: 2px solid gray;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 2em;
+}
+
+td:hover
+{
+    cursor: pointer;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.text1
+{
+    margin-right: 150px;
+}
+
+.text1
+{
+    color: white;
+    font-size: 2.5em;
+}
+
+.blanc
+{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+
+.vert
+{
+    color: black;
+    background-color: green;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+
+.rouge
+{
+    color: black;
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+
